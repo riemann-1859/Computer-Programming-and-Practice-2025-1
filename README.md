@@ -10,3 +10,8 @@ int main() {
   return 0; /* 이것도 주석입니다 */
 }
 ```
+
+#### 관련 C89 표준
+3.1.9 Comments
+> Except within a character constant, a string literal, or a comment, the characters /* introduce a comment.
+> The contents of a comment are examined only to identify multibyte characters and to find the characters */ that terminate it. 
