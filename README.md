@@ -35,6 +35,6 @@ C 소스 파일의 확장자는 c고, 헤더 파일의 확장자는 h입니다.
 > implementation-defined manner. If this search is not supported, or if the search fails, the directive
 > is reprocessed as if it read
 >
-> `# include <h-char-sequence> new-line
+> `# include <h-char-sequence> new-line`
 >
 > with the identical contained sequence ... from the original directive. 
