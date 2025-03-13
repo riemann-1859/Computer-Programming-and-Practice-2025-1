@@ -36,6 +36,8 @@ int main() {
 >
 > ... the arguments are implicitly converted, as if by assignment,
 > to the types of the corresponding parameters. ...
+> If the function is defined with a type that is not compatible with the type (of the expression)
+> pointed to by the expression that denote the called function, the behavior is undefined. 
 >
 > The order of evaluation of the function designator, the arguments,
 > and subexpressions within the arguments is unspecified, but there is a sequence point
