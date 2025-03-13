@@ -23,6 +23,7 @@ int main() {
 >...
 >
 >"Program termination"
+>
 >A return from the initial call to the main function is equivalent to calling the exit function
 >with the value returned by the main function as its argument.
 >If the main function executes a return that specifies no value, the termination status
