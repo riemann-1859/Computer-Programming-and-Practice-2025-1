@@ -12,3 +12,29 @@ C 소스 파일의 확장자는 c고, 헤더 파일의 확장자는 h입니다.
 ```c
 #include "value.h" /* value.h 파일의 모든 내용을 현재 위치에 포함시킵니다. */
 ```
+
+#### 관련 C89 표준
+3.8.2 Source file inclusion
+> Semantics
+>
+> A preprocessing directive of the form
+>
+> `# include <h-char-sequence> new-line`
+>
+> searches a sequence of implementation-defined places for a header identified uniquely by the
+> specified sequence between the < and > delimiters, and cause the replacement of that directive
+> by the entire contents of the header. How the places are specified or the header identified is
+> implementation-defined.
+>
+> A preprocessing directive of the form
+>
+> `# include "q-char-sequence" new-line`
+>
+> causes the replacement of that directive by the entire contents of the source file identified by
+> the specified sequence between the delimiters. The named source file is searched for in an
+> implementation-defined manner. If this search is not supported, or if the search fails, the directive
+> is reprocessed as if it read
+>
+> `# include <h-char-sequence> new-line
+>
+> with the identical contained sequence ... from the original directive. 
