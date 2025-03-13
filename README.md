@@ -17,3 +17,26 @@ int main() {
    return value(5); /* value 함수에 인자 5를 전달해서 호출하고, 반환값을 그대로 반환합니다. */
 }
 ```
+
+#### 관련 C 표준
+3.3.2.2 Function calls
+> Constraints
+>
+> ... the number of arguments shall agree with the number of parameters.
+> Each argument shall have a type such that its value may be assigned to an object with the ...
+> type of its corresponding parameter.
+>
+> Semantics
+>
+> ... The list of expressions specifies the arguments to the function
+>
+> An argument may be an expression of any object type.
+> In preparing for the call to a function, the arguments are evaluated,
+> and each parameter is assigned the value of the corresponding argument. ...
+>
+> ... the arguments are implicitly converted, as if by assignment,
+> to the types of the corresponding parameters. ...
+>
+> The order of evaluation of the function designator, the arguments,
+> and subexpressions within the arguments is unspecified, but there is a sequence point
+> before the actual call.
